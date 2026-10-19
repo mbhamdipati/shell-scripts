@@ -7,3 +7,11 @@ if [ $user_id -ne 0 ]; then
 else
     echo "You are root user"
 fi
+
+dnf install nginx -y
+
+if [ $? -eq 0 ]; then
+    echo "Nginx installed successfully"
+else
+    echo "Nginx installation failed"
+fi
