@@ -1,3 +1,3 @@
-user_id = $(id -u)
+user_id=$(id -u)
 
 echo "User ID: $user_id"
