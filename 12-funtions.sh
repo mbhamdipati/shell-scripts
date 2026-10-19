@@ -17,5 +17,5 @@ validate(){
 dnf install nginx -y
 validate "Nginx"
 
-dnf install mysql -y
+dnf install mysqql -y
 validate "MySQL"
