@@ -15,4 +15,4 @@ validate(){
 }
 
 dnf install nginx -y
-validate $? "Nginx"
+validate "Nginx"
