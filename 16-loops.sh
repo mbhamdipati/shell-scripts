@@ -26,7 +26,8 @@ do
     if [ $? -eq 0 ]; then
         echo "$package is already installed" &>> $logs_file
     else
-    echo "Going to install $package" &>> $logs_file    
-    dnf install $package -y &>> $logs_file
-    validate $? "$package installation"
+        echo "Going to install $package" &>> $logs_file    
+        dnf install $package -y &>> $logs_file
+        validate $? "$package installation"
+    fi
 done
