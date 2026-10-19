@@ -8,14 +8,14 @@ fi
 
 validate(){
     if [ $? -eq 0 ]; then
-        echo "$1 installed successfully"
+        echo "$2 ..SUCCESS"
     else
-        echo "$1 installation failed"
+        echo "$2 ..FAILED"
     fi
 }
 
 dnf install nginx -y
-validate "Nginx"
+validate $? "Nginx installation"
 
 dnf install mysql -y
-validate "MySQL"
+validate $? "MySQL installation"
